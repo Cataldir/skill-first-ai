@@ -22,7 +22,7 @@ Set-Location "C:\Users\ricar\Github\skill-first-ai"
 ```powershell
 git init -b main
 git add .
-git commit -m "skill-first-ai: companion repo for the Dengo / TDC AI Tech Circle talk"
+git commit -m "skill-first-ai: companion repo for the AI Tech Circle talk"
 ```
 
 ## 3. Create the public repo and push
@@ -60,8 +60,8 @@ Confirm:
 ## 5. Tag the talk release (optional, helps citations from the deck)
 
 ```powershell
-git tag -a v1.0.0-dengo -m "Dengo / TDC AI Tech Circle talk, 28 May 2026"
-git push origin v1.0.0-dengo
+git tag -a v1.0.0-aitc -m "AI Tech Circle talk, 28 May 2026"
+git push origin v1.0.0-aitc
 ```
 
 ## 6. Sanity check the demo end-to-end

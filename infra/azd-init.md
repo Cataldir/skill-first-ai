@@ -16,13 +16,13 @@ not feasible at the venue.
 ```powershell
 # from repo root
 azd auth login
-azd init --template . --environment skill-first-dengo
+azd init --template . --environment skill-first-aitc
 ```
 
 When prompted, set:
 
 - `AZURE_LOCATION` → `eastus2` (or your preferred Foundry region).
-- `AZURE_RESOURCE_GROUP` → `rg-skill-first-dengo`.
+- `AZURE_RESOURCE_GROUP` → `rg-skill-first-aitc`.
 
 ## Build the image
 
@@ -38,7 +38,7 @@ az acr build `
 ```powershell
 azd provision `
   --output json `
-  -e skill-first-dengo
+  -e skill-first-aitc
 ```
 
 This deploys [`infra/foundry.bicep`](./foundry.bicep). Read the JSON output
@@ -69,7 +69,7 @@ In Foundry portal:
 ## Teardown
 
 ```powershell
-azd down --purge -e skill-first-dengo
+azd down --purge -e skill-first-aitc
 ```
 
 APIM Developer SKU takes ~10 minutes to fully delete. Run teardown the

@@ -95,7 +95,7 @@ same `SkillResult` envelope.
 ## Demo flow
 
 This repo is the companion to a talk delivered to a group of Brazilian C-level
-leaders ([Dengo / TDC AI Tech Circle, May 28 2026][talk-meta]). The deck lives
+leaders ([AI Tech Circle, May 28 2026][talk-meta]). The deck lives
 in [`presentation/`][slides] and drives a segmented demo:
 
 1. **Slides — set the question.** Why does every area think it needs its own agent?

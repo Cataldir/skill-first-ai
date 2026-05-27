@@ -21,7 +21,7 @@ def test_orchestrator_happy_path_executes_and_logs():
             policy_topic="expense.travel",
             required_permission="expense.approve",
             ticket_title="Travel reimbursement for client visit",
-            ticket_body="USD 1800 to attend Dengo workshop; director approval per policy.",
+            ticket_body="USD 1800 to attend customer workshop; director approval per policy.",
         ),
     )
     assert response.decision == "executed"
@@ -43,7 +43,7 @@ def test_orchestrator_refuses_when_permission_denied():
             policy_topic="expense.travel",
             required_permission="expense.approve",
             ticket_title="Travel reimbursement for client visit",
-            ticket_body="USD 1800 to attend Dengo workshop; director approval per policy.",
+            ticket_body="USD 1800 to attend customer workshop; director approval per policy.",
         ),
     )
     assert response.decision == "refused"
@@ -64,7 +64,7 @@ def test_orchestrator_refuses_unknown_actor():
             policy_topic="expense.travel",
             required_permission="expense.read",
             ticket_title="Travel reimbursement for client visit",
-            ticket_body="USD 1800 to attend Dengo workshop; director approval per policy.",
+            ticket_body="USD 1800 to attend customer workshop; director approval per policy.",
         ),
     )
     assert response.decision == "refused"

@@ -30,3 +30,7 @@ presentation/slides.pptx
 
 # Local secrets
 *.local.yaml
+
+.venv-check/
+.venv/
+venv/

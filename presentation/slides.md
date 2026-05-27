@@ -5,7 +5,7 @@ size: 16:9
 paginate: true
 backgroundColor: "#FFFFFF"
 color: "#373435"
-header: "**Skill-first AI** · Dengo · 28 mai 2026"
+header: "**Skill-first AI** · AI Tech Circle · 28 mai 2026"
 footer: "Ricardo Cataldi · @cataldir · github.com/Cataldir/skill-first-ai"
 style: |
   :root {
@@ -105,7 +105,7 @@ style: |
 GBB Senior Cloud Solution Architect · Microsoft
 Conselheiro acadêmico · FIAP / IBM
 
-Dengo · TDC AI Tech Circle · 28 mai 2026
+AI Tech Circle · 28 mai 2026
 
 ---
 

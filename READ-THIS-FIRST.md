@@ -1,4 +1,4 @@
-# Read-this-first · Dengo / TDC AI Tech Circle
+# Read-this-first · AI Tech Circle
 
 **Date**: 28 May 2026.
 **Audience**: ~38 senior leaders. B3, Bradesco, BV, BB, BTG, Pan, Safra,
