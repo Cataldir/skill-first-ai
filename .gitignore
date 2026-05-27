@@ -34,3 +34,6 @@ presentation/slides.pptx
 .venv-check/
 .venv/
 venv/
+
+# Office lock files
+~$*
