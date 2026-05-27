@@ -1,0 +1,37 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actor": {
+      "description": "User principal opening the ticket.",
+      "title": "Actor",
+      "type": "string"
+    },
+    "body": {
+      "description": "Detail, 20-2000 chars.",
+      "maxLength": 2000,
+      "minLength": 20,
+      "title": "Body",
+      "type": "string"
+    },
+    "category": {
+      "description": "Category, one of: ['customer_service', 'expense', 'hr', 'it', 'legal'].",
+      "title": "Category",
+      "type": "string"
+    },
+    "title": {
+      "description": "Short human title, 8-120 chars.",
+      "maxLength": 120,
+      "minLength": 8,
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "actor",
+    "category",
+    "title",
+    "body"
+  ],
+  "title": "TicketOpenInput",
+  "type": "object"
+}

@@ -1,0 +1,24 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "limit": {
+      "default": 3,
+      "maximum": 5,
+      "minimum": 1,
+      "title": "Limit",
+      "type": "integer"
+    },
+    "query": {
+      "description": "Free-text query, 3-100 chars.",
+      "maxLength": 100,
+      "minLength": 3,
+      "title": "Query",
+      "type": "string"
+    }
+  },
+  "required": [
+    "query"
+  ],
+  "title": "DocumentSearchInput",
+  "type": "object"
+}

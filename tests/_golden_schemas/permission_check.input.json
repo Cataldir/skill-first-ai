@@ -1,0 +1,21 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actor": {
+      "description": "User principal name, e.g. alice@contoso.com.",
+      "title": "Actor",
+      "type": "string"
+    },
+    "permission": {
+      "description": "Dotted permission identifier, e.g. expense.submit, expense.approve, hr.vacation.approve, it.access.request.",
+      "title": "Permission",
+      "type": "string"
+    }
+  },
+  "required": [
+    "actor",
+    "permission"
+  ],
+  "title": "PermissionCheckInput",
+  "type": "object"
+}

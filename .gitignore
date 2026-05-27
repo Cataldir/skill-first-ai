@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Build artifacts
+dist/
+build/
+*.egg
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+
+# Marp build outputs
+presentation/slides.html
+presentation/slides.pdf
+presentation/slides.pptx
+
+# Local secrets
+*.local.yaml

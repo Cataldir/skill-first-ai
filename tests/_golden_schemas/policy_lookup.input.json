@@ -1,0 +1,15 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "topic": {
+      "description": "Policy topic in dotted form, e.g. expense.travel, hr.vacation, it.access.production.",
+      "title": "Topic",
+      "type": "string"
+    }
+  },
+  "required": [
+    "topic"
+  ],
+  "title": "PolicyLookupInput",
+  "type": "object"
+}

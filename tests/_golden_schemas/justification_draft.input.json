@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "description": "The action being justified, e.g. ticket_open.",
+      "title": "Action",
+      "type": "string"
+    },
+    "actor": {
+      "description": "The actor whose action is being justified.",
+      "title": "Actor",
+      "type": "string"
+    },
+    "policy_topic": {
+      "description": "Policy topic the action is grounded on.",
+      "title": "Policy Topic",
+      "type": "string"
+    },
+    "rationale": {
+      "description": "Free-form rationale the orchestrator inferred from context.",
+      "maxLength": 600,
+      "title": "Rationale",
+      "type": "string"
+    }
+  },
+  "required": [
+    "actor",
+    "action",
+    "policy_topic",
+    "rationale"
+  ],
+  "title": "JustificationInput",
+  "type": "object"
+}

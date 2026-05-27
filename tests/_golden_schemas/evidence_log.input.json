@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "description": "What was attempted, e.g. ticket_open, refund_approve.",
+      "title": "Action",
+      "type": "string"
+    },
+    "actor": {
+      "description": "Who performed the action.",
+      "title": "Actor",
+      "type": "string"
+    },
+    "correlation_id": {
+      "description": "The trace ID linking the action chain.",
+      "title": "Correlation Id",
+      "type": "string"
+    },
+    "decision": {
+      "description": "executed | refused | escalated.",
+      "title": "Decision",
+      "type": "string"
+    },
+    "notes": {
+      "default": "",
+      "maxLength": 2000,
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "actor",
+    "action",
+    "decision",
+    "correlation_id"
+  ],
+  "title": "EvidenceLogInput",
+  "type": "object"
+}
