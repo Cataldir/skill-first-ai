@@ -16,13 +16,26 @@ search documents, open a ticket, log evidence, draft a justification. Six small
 skills, owned by humans, versioned, tested, governed once. Then the agent is the
 boring part — a prompt that composes them.
 
-It is the same argument I keep making in posts like
-[*Tool calling is not architecture*][tool-calling] and [*Beyond chatbots:
-patterns for agentic systems on Microsoft Foundry*][beyond-chatbots]. The point
-of this repo is that those posts now have running code attached.
+This repo is the running-code companion to a public Medium-network trail about
+turning agent demos into governed systems:
 
-[tool-calling]: https://medium.com/@cataldi.ricardo/tool-calling-is-not-architecture
-[beyond-chatbots]: https://medium.com/@cataldi.ricardo/beyond-chatbots-patterns-for-agentic-systems-on-microsoft-foundry
+- [*Tool Calling Is Not Architecture*][tool-calling] explains why a list of
+  tools is not the same thing as an operational boundary.
+- [*Anti-Corruption Layers for Agentic Systems*][agentic-acl] maps directly to
+  the `BaseSkill` contract: translation, semantic validation, failure handling,
+  and evidence.
+- [*MCP vs A2A: Tools, Agents, and Where Each Protocol Belongs*][mcp-vs-a2a]
+  explains why this repo exposes reusable skills as MCP tools instead of
+  inventing another peer agent for every department.
+- [*Why We Chose Python for Our MCP Servers*][mcp-python] gives the
+  implementation rationale behind the Python-first MCP surface.
+
+The point of this repo is that those articles now have running code attached.
+
+[tool-calling]: https://levelup.gitconnected.com/tool-calling-is-not-architecture-57101a1d8b5a
+[agentic-acl]: https://medium.com/@cataldi.ricardo/anti-corruption-layers-for-agentic-systems-b93464c3f68b
+[mcp-vs-a2a]: https://levelup.gitconnected.com/mcp-vs-a2a-tools-agents-and-where-each-protocol-belongs-53e1f9ab9765
+[mcp-python]: https://levelup.gitconnected.com/why-we-chose-python-for-our-mcp-servers-and-why-that-decision-matters-f449cb911822
 
 ## What is inside
 
