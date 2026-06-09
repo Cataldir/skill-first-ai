@@ -1,9 +1,7 @@
 # Speaker notes — Skill-first AI · AI Tech Circle · 28 mai 2026
 
 **Duração-alvo:** 35–40 minutos com Q&A.
-**Plateia:** ~38 lideranças seniores brasileiras (C-level, Heads, Diretores)
-de B3, Bradesco, BV, BB, BTG, Pan, Safra, Braskem, CPFL, Fiesp, Interplayers,
-Itaú, PAGBANK, Petrobras, Prodesp, SENAI-SP, SESI-SP, Stone, UOL, XP.
+**Plateia:** lideranças seniores brasileiras (C-level, Heads, Diretores).
 **Idioma:** PT-BR. Inglês só nos nomes de skills, manifestos e arquivos.
 **Energia:** filósofo grumpy. Pausa nas perguntas. Não venda. Conte.
 
