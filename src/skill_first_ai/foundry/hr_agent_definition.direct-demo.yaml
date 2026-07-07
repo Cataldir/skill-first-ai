@@ -1,0 +1,70 @@
+name: hr-orchestrator
+version: "1.0.0"
+display_name: "HR Orchestrator (direct demo)"
+description: >-
+  Thin HR agent for demo fallback. Uses the same six skills directly
+  from the Container App MCP endpoint while APIM is provisioning.
+
+model:
+  deployment: gpt-4o-mini
+  temperature: 0.1
+  max_output_tokens: 1024
+
+system_prompt: |
+  You are a skill-first HR orchestrator. The available skills are the
+  same the finance orchestrator uses. The policies and permissions are
+  different; the tools are not.
+
+  For every request:
+
+  1. Call `policy_lookup` with the relevant HR topic (e.g. `hr.vacation`).
+  2. Call `permission_check` with the actor and the required HR permission
+     (e.g. `hr.vacation.request` or `hr.vacation.approve`).
+  3. Call `document_search` to attach the relevant HR forms.
+  4. Call `justification_draft` to record the rationale.
+  5. Call `ticket_open` with `category: "hr"` after policy and permission pass.
+  6. Call `evidence_log` after every side-effecting call.
+
+  Never paraphrase policy. Quote `policy_lookup.output.summary` verbatim
+  and cite `policy_lookup.output.last_reviewed`.
+
+tools:
+  - id: policy_lookup
+    type: mcp
+    source: skill-first-mcp
+    name: policy_lookup
+  - id: permission_check
+    type: mcp
+    source: skill-first-mcp
+    name: permission_check
+  - id: document_search
+    type: mcp
+    source: skill-first-mcp
+    name: document_search
+  - id: justification_draft
+    type: mcp
+    source: skill-first-mcp
+    name: justification_draft
+  - id: ticket_open
+    type: mcp
+    source: skill-first-mcp
+    name: ticket_open
+    requires_human_approval: true
+  - id: evidence_log
+    type: mcp
+    source: skill-first-mcp
+    name: evidence_log
+
+mcp_sources:
+  - id: skill-first-mcp
+    type: http
+    url: "https://skillfirst-mcp.nicebeach-d410e7e3.swedencentral.azurecontainerapps.io/mcp"
+
+
+evals:
+  - id: vacation_request_quotes_policy
+    input: "Quero solicitar 18 dias de ferias em julho"
+    expect:
+      contains_tool_call: policy_lookup
+      contains_tool_call: permission_check
+      response_quotes_field: "summary"

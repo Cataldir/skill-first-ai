@@ -1,0 +1,6 @@
+name: skill-first-ai-dengo
+metadata:
+  template: skill-first-ai-dengo@0.1.0
+infra:
+  provider: bicep
+  path: infra
